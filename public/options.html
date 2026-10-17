@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>X 列表助手设置</title><link rel="stylesheet" href="options.css"></head>
+<body><main>
+  <div class="eyebrow">TWITTER USER HELPER</div><h1>X 列表助手</h1><p class="intro">打开用户主页就能看到列表归属，点击列表项立即保存。</p>
+  <section><h2>主页显示</h2><label for="display">列表入口显示方式</label><select id="display"><option value="names">显示已加入的列表名称</option><option value="count">显示已加入的列表数量</option></select><p class="muted">设置自动保存，已打开的 X 页面会同步更新。</p></section>
+  <section><h2>常用列表</h2><label for="account">登录账号</label><select id="account"></select><div id="favorites"></div><p class="muted">勾选后在主页菜单置顶。也可以直接点击菜单中的 ☆。</p><button id="clear" type="button">清除这个账号的本地列表目录</button></section>
+  <section><h2>使用说明</h2><ol><li>安装后刷新已登录的 X 页面，打开一个用户主页。</li><li>主页显示列表状态，点击入口展开自己的列表。</li><li>✓ 表示已加入；○ 表示未加入；? 表示 X 未返回状态，暂不可操作。</li><li>添加或移除失败时，先刷新状态，确认结果再操作。</li></ol><p class="muted">首次无法读取时，可以手动打开一次 X 原生的“添加/移除列表”窗口，然后关闭，再点击助手的刷新状态。</p></section>
+  <p class="privacy">数据保存在本机。扩展不保存登录凭据，不向第三方发送列表数据。列表状态只在当前页面内短期缓存；此设置页保存列表目录和常用项。</p>
+  <p id="status" role="status" aria-live="polite"></p>
+</main><script src="options.js"></script></body></html>

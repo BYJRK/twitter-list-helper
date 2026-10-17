@@ -1,0 +1,23 @@
+# Dependencies and local cache
+node_modules/
+.npm-cache/
+
+# Build and packaging output
+dist/
+*.zip
+*.crx
+*.tsbuildinfo
+
+# Local research materials
+research/
+
+# Logs and local environment (keep example configuration trackable)
+*.log
+.env
+.env.*
+!.env.example
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
